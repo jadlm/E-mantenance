@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Maintenance Pro - Services de Maintenance Électronique et Électroménager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img class="logoo" src="images/logo 2024.png" alt="E-Maintenance Pro Logo" width="130" height="850">
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reparation">Réparation</a></li>
+                <li><a href="#suivi">Suivi</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li>
+                    <a href="client.html">
+                        <button class="btn-login">Espace Client</button>
+                    </a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>Votre Expert en Maintenance Électronique et Électroménager</h1>
+                <p>Solutions professionnelles pour tous vos besoins de réparation</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary">Demander une réparation</button>
+                    <button class="btn-secondary">Nos services</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <!-- Appareils électroniques -->
+                <div class="service-category">
+                    <h3>Appareils Électroniques</h3>
+                    
+                    <div class="category-grid">
+                        <div class="service-card">
+                            <img class="ordinateur" src="images/ecran-dordinateur.png" alt="">
+                           <a href="pc.html"> <h4>Ordinateurs</h4> </a>
+                            <p>Réparation et maintenance de PC et laptops</p>
+                        </div>
+                        
+                            <div class="service-card">
+                                <img class="phone" src="images/smartphones.png" alt="Smartphone image">
+                               <a href="index.html" > <h4>Smartphones</h4></a>
+                                <p>Réparation d'écrans et composants</p>
+                            </div>
+                        
+                            
+                        <div class="service-card">
+                           <img class="tablette" src="images/tablette (1).png" alt="">
+                            <h4>Tablettes</h4>
+                            <p>Service complet de réparation</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="imprimante" src="images/imprimante.png" alt="">
+                            <h4>Imprimantes</h4>
+                            <p>Maintenance et réparation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Électroménager -->
+                <div class="service-category">
+                    <h3>Électroménager</h3>
+                    <div class="category-grid">
+                        <div class="service-card">
+                            <i class="fas fa-refrigerator"></i>
+                            <img class="frigo" src="images/frigo.png" alt="">
+                            <h4>Réfrigérateurs</h4>
+                            
+                            <p>Réparation et entretien de frigos et congélateurs</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-washing-machine"></i>
+                            <img class="Lave-linge" src="images/seche-linge.png" alt="">
+                            <h4>Lave-linge</h4>
+                            <p>Maintenance et réparation de machines à laver</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="climatiseur" src="images/climatiseur.png" alt="">
+                            <h4>Climatiseurs</h4>
+                            <p>Installation et réparation de climatiseurs</p>
+                        </div>
+                        <div class="service-card">
+                            <img class="four" src="images/four (1).png" alt="">
+                            <h4>Fours et Plaques</h4>
+                            <p>Réparation d'appareils de cuisson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reparation" class="repair-form">
+            <h2>Demande de Réparation</h2>
+            <form id="repairForm">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <select id="deviceType" required>
+                        <option value="">Type d'appareil</option>
+                        <optgroup label="Électronique">
+                            <option value="ordinateur">Ordinateur</option>
+                            <option value="smartphone">Smartphone</option>
+                            <option value="tablette">Tablette</option>
+                            <option value="imprimante">Imprimante</option>
+                        </optgroup>
+                        <optgroup label="Électroménager">
+                            <option value="refrigerateur">Réfrigérateur</option>
+                            <option value="lave-linge">Lave-linge</option>
+                            <option value="climatiseur">Climatiseur</option>
+                            <option value="four">Four/Plaque de cuisson</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="description" required placeholder="Description du problème"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Envoyer la demande</button>
+            </form>
+        </section>
+
+        <section id="suivi" class="tracking">
+            <h2>Suivi de Réparation</h2>
+            <div class="tracking-form">
+                <input type="text" id="trackingNumber" placeholder="Numéro de suivi">
+                <button onclick="trackRepair()" class="btn-primary">Suivre</button>
+            </div>
+            <div id="trackingResult" class="tracking-result"></div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps dure une réparation ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le temps de réparation varie selon le type d'appareil et le problème. En moyenne, nous intervenons sous 24-48h.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Intervenez-vous à domicile pour l'électroménager ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons un service de réparation à domicile pour tous les appareils électroménagers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>E-Maintenance Pro</h3>
+                <p>Votre partenaire de confiance pour la maintenance électronique et électroménager</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@e-maintenancepro.fr</p>
+                <p>Tél: 01 23 45 67 89</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Maintenance Pro. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

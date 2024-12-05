@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Client - Maintenance</title>
+    <link rel="stylesheet" href="css/styles1.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img class="logoo" src="images/logo 2024.png" alt="E-Maintenance Pro Logo" width="130" height="850">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reparation">Réparation</a></li>
+            <li><a href="#suivi">Suivi</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li>
+                <a href="client.html">
+                    <button class="btn-login">Espace Client</button>
+                </a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Espace Client</h1>
+            <p>Portail de maintenance</p>
+        </header>
+
+        <main>
+            <section class="login-section" id="loginSection">
+                <h2>Connexion</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit">Se connecter</button>
+                </form>
+            </section>
+
+            <section class="dashboard-section hidden" id="dashboardSection">
+                <div class="welcome-banner">
+                    <h2>Bienvenue, <span id="userName">Client</span></h2>
+                </div>
+                
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h3>Tickets en cours</h3>
+                        <p class="count">3</p>
+                        <button onclick="showTickets()">Voir détails</button>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <h3>Prochain entretien</h3>
+                        <p class="date">15 Mars 2024</p>
+                        <button onclick="showMaintenance()">Planifier</button>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <h3>État du système</h3>
+                        <p class="status">Optimal</p>
+                        <button onclick="showStatus()">Voir rapport</button>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <h3>Support</h3>
+                        <p>Assistance 24/7</p>
+                        <button onclick="contactSupport()">Contacter</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main1.js"></script>
+</body>
+</html>
